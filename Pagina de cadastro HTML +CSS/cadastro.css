@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Poppins:ital,wght@1,200&display=swap');
+
+/* O HTML vem com configurações padrão e dessa forma vamos zera tudo*/
+
+* {
+    margin: 0;
+    padding:0;
+    border: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background: #1B2029;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    /*pesquisar porque foi usado os 4 ultimos elementos*/
+}
+
+main .social-midia {
+    display: flex;
+    align-content: center;
+}
+
+main .social-midia img {
+    width: 36px;
+    margin-left: 3rem; /*para add espaços entre as imagens*/
+}
+
+main .social-midia a:first-child img {
+    margin-left: 0; /*isso serve para tirar a margem da primeira imagem, senão ira fiscar descentralizada*/
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background-color: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 5rem; /*O que é rem? */
+    color: white;
+    margin-top: 1 rem;
+    outline: none; /*outline serve para tirar a borda do input quando ela é clicada */
+    border: 1px solid #040B18;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background-color: #6C63FF;
+    color: white;
+    transition: all .3 ease-in-out; /*isso aqui faz o hover mudar de cor mais lento*/
+}
+
+
+main form input[type="submit"]:hover {
+    background-color: #5952d4;
+}
+
+section.img {
+    display: flex;  /*imagem vai para o centro*/
+    align-items: flex-end; /*alinhar intens no final do container*/
+    padding: 4rem;
+    width: 90%;
+}
